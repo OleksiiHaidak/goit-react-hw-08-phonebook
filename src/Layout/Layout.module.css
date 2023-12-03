@@ -1,0 +1,95 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.headerLink {
+    cursor: pointer;
+    display: inline-flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: background-color 0.3s ease;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+}
+
+.headerLink:hover {
+    background-color: #555555;
+    transform: scale(1.05);
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.75), 5px 5px 9px rgba(94, 104, 121, 0.4);
+    transition: all 0.2s;
+}
+
+.headerLink:active {
+    transform: scale(0.94);
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.45), 3px 3px 6px rgba(94, 104, 121, 0.3);
+    transition: all 0.2s;
+}
+
+.headerLink:nth-of-type(1) {
+    margin-right: auto;
+}
+
+.headerLink:nth-of-type(2),
+.headerLink:nth-of-type(3) {
+    margin-left: 25px;
+}
+
+.headerLink.noHover:hover,
+.headerLink.noHover:focus {
+    background-color: #777777;
+    transform: none;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: none;
+    cursor: default;
+}
+
+.active {
+    background-color: #232323;
+    transform: scale(1.05);
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.75), 5px 5px 9px rgba(94, 104, 121, 0.4);
+}
+
+.logOutBtn {
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 18px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: background-color 0.3s ease;
+    background-color: #777777;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+}
+
+.logOutBtn:hover {
+    background-color: #555555;
+    transform: scale(1.05);
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.75), 5px 5px 9px rgba(94, 104, 121, 0.4);
+}
+
+.logOutBtn:active {
+    transform: scale(0.94);
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.45), 3px 3px 6px rgba(94, 104, 121, 0.3);
+    transition: all 0.2s;
+}
