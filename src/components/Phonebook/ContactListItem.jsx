@@ -17,9 +17,14 @@ const ContactListItem = ({contact}) => {
 
   return (
     <li key={contact.id} className={css.contactListItem}>
-      {contact.name}: {contact.phone}
-      <button onClick={handleDeleteClick} className={css.delBtn}></button>
-    </li>
+  <div className={css.contactItemContainer}>
+    <div className={css.contactDetails}>
+      <span className={css.contactItem}>{contact.name}</span>
+      <span className={css.contactItem}>{contact.number}</span>
+    </div>
+    <button onClick={handleDeleteClick} className={css.delBtn}></button>
+  </div>
+</li>
   );
 };
 

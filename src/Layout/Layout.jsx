@@ -22,9 +22,9 @@ const Layout = ({ children }) => {
                 <>
                     <NavLink className={`${css.headerLink} ${css.noHover}`} to="/contacts">Contacts</NavLink>
                         <div className={css.userName}>
-                            <span>{userData.name}</span>
-                            <p>{userData.email}</p>
-                            <button onClick={onLogOut} className={css.logOutBtn}>Log Out</button>
+                            <span className={css.titleName}>{userData.name}</span>
+                            <p className={css.titleName}>{userData.email}</p>
+                            <button onClick={onLogOut} className={`${css.headerLink} ${css.logOutBtn}`}>Log Out</button>
                         </div>
                 </> 
                 : 

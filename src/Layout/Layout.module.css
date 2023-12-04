@@ -6,9 +6,15 @@
 
 .userName {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    align-items: baseline;
     text-align: right;
+    justify-content: flex-end;
+}
+
+.userName span,
+.userName p,
+.userName button {
+    margin-left: 50px;
 }
 
 .headerLink {
@@ -20,6 +26,7 @@
     font-size: 14px;
     border-radius: 6px;
     border: none;
+    background-color: #777777;
     box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
     transition: background-color 0.3s ease;
     -webkit-background-clip: text;
@@ -67,29 +74,15 @@
 }
 
 .logOutBtn {
-    cursor: pointer;
-    padding: 10px;
-    margin-top: 18px;
-    border-radius: 6px;
-    border: none;
-    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
-    transition: background-color 0.3s ease;
+    text-transform: none;
+}
+
+.titleName {
+    font-size: 18px;
     background-color: #777777;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
     text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
-}
-
-.logOutBtn:hover {
-    background-color: #555555;
-    transform: scale(1.05);
-    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.75), 5px 5px 9px rgba(94, 104, 121, 0.4);
-}
-
-.logOutBtn:active {
-    transform: scale(0.94);
-    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.45), 3px 3px 6px rgba(94, 104, 121, 0.3);
-    transition: all 0.2s;
 }
